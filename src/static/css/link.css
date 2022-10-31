@@ -1,0 +1,206 @@
+.linkDetails,
+.commentDetails {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid rgb(134, 84, 30);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.commentDetails {
+  margin-bottom: 20px;
+}
+
+.commentControls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+.linkDetailName {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.linkDetailItem {
+  margin-bottom: 30px;
+}
+
+.linkDetailEdit input,
+.linkDetailEdit select,
+.linkDetailEdit textarea,
+.commentDetailEdit input,
+.loginEdit input {
+  border: 2px solid rgb(134, 84, 30);
+  border-radius: 4px;
+  color: rgb(134, 84, 30);
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.linkDetailEdit input,
+.linkDetailEdit select,
+.commentDetailEdit input,
+.loginEdit input {
+  height: 28px;
+}
+
+.linkDetailEdit input,
+.commentDetailEdit input,
+.loginEdit input {
+  width: 100%;
+}
+
+.linkDetailContent,
+.commentContent {
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+textarea {
+  min-height: 60px;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  display: block;
+}
+
+#plusButton {
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.editRow {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+
+.linkDetailControl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.tagEdit {
+  margin-top: 10px;
+}
+
+.tagEdit input {
+  width: 50%;
+}
+
+.linkTagRemoveSign {
+  color: white;
+}
+
+.editing #contentLinkTags .linkTag {
+  cursor: pointer;
+}
+
+.editing #contentLinkTags .linkTag:hover {
+  background-color: #b7b7b7;
+  cursor: pointer;
+}
+
+#tagInput {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.linkDetailEdit,
+.commentDetailEdit,
+.displayWhenEditing,
+.editing .hideWhenEditing,
+.creating .hideWhenCreating {
+  display: none;
+}
+
+.editing .linkDetailEdit,
+.editing .commentDetailEdit,
+.editing .displayWhenEditing {
+  display: block;
+}
+
+.editing span.displayWhenEditing {
+  display: inline;
+}
+
+.confirmationDialog {
+  min-width: 240px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid rgb(134, 84, 30);
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialogTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.dialogMessage {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.dialogControls {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.deleteButton {
+  background-color: #ff7070;
+  color: rgb(255, 248, 248);
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.messageBox {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+
+  background-color: rgb(250, 199, 156);
+  border: 2px solid rgb(134, 84, 30);
+  border-radius: 8px;
+  margin-top: 20px;
+  color: rgb(134, 84, 30);
+
+  transform: scale(0.2);
+  transition: 0.2s;
+}
+
+.messageBox.animate {
+  transform: scale(1);
+}
+
+.messageBox a {
+  color: rgb(134, 84, 30);
+  font-weight: 700;
+}
