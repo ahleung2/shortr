@@ -1,0 +1,18 @@
+.loginContainer {
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+.loginEditLabel {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.loginEdit {
+  margin-bottom: 20px;
+}
+
+.hintText {
+  font-size: 14px;
+}

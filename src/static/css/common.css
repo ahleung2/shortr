@@ -1,0 +1,168 @@
+body {
+  margin: 10px;
+  font-family: "Roboto", serif;
+  color: rgb(134, 84, 30);
+}
+
+.main {
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  background: linear-gradient(
+    90deg,
+    rgba(228, 137, 49, 1) 0%,
+    rgba(255, 194, 134, 1) 49%,
+    rgba(255, 145, 39, 1) 100%
+  );
+  border-radius: 8px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-family: "Silkscreen", sans-serif;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: white;
+  line-height: 0.85;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.controls {
+  margin-right: 10px;
+}
+
+.controls button {
+  height: 36px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-family: "Silkscreen", sans-serif;
+  margin-left: 10px;
+  color: rgb(228, 137, 49);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 2px solid rgb(218, 185, 167);
+  font-size: 0.9em;
+}
+
+button {
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #ffd7b4;
+  color: rgb(178, 86, 0);
+  transition: transform 0.1s;
+}
+
+.negativeButton,
+.disabledButton {
+  background-color: #e5e5e5;
+  color: rgb(175, 113, 56);
+}
+
+.linkDetailEdit input,
+.linkDetailEdit select,
+.linkDetailEdit textarea,
+.commentDetailEdit input,
+.loginEdit input {
+  border: 2px solid rgb(134, 84, 30);
+  border-radius: 4px;
+  color: rgb(134, 84, 30);
+  font-size: 16px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.linkDetailEdit input,
+.linkDetailEdit select,
+.commentDetailEdit input,
+.loginEdit input {
+  height: 28px;
+}
+
+.linkDetailEdit input,
+.commentDetailEdit input,
+.loginEdit input {
+  width: 100%;
+}
+
+.linkTags {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 4px;
+  row-gap: 4px;
+  max-width: 100%;
+}
+
+.linkTag:hover {
+  cursor: default;
+}
+
+.linkTag {
+  font-size: 0.9em;
+  color: rgb(255, 241, 226);
+  background: rgb(213, 126, 18);
+  border-radius: 4px;
+  padding: 2px 6px;
+  max-width: 90%;
+  overflow-wrap: break-word;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.showWhenLoggedIn,
+.loggedIn .hideWhenLoggedIn {
+  display: none;
+}
+
+.loggedIn .showWhenLoggedIn {
+  display: block;
+}
+
+.loggedIn button.showWhenLoggedIn {
+  display: inline-block;
+}
+
+@media (pointer: fine) {
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}

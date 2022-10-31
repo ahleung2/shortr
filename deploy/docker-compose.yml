@@ -1,0 +1,38 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    networks:
+      - app_network
+    volumes:
+      - ../data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "${MONGO_USERNAME}"
+      MONGO_INITDB_ROOT_PASSWORD: "${MONGO_PASSWORD}"
+    restart: always
+
+  shortr:
+    image: "node:18"
+    container_name: shortr
+    networks:
+      - app_network
+    ports:
+      - "80:3000"
+    volumes:
+      - ../:/usr/src/app
+    environment:
+      MONGO_USERNAME: "${MONGO_USERNAME}"
+      MONGO_PASSWORD: "${MONGO_PASSWORD}"
+      MONGO_HOST: mongo
+      MONGO_PORT: 27017
+    depends_on: [mongo]
+    entrypoint: bash
+    command: "-c 'cd /usr/src/app && npm install && npm run start'"
+    restart: always
+
+networks:
+  app_network:
+    driver: bridge
