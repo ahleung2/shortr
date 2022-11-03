@@ -1,3 +1,6 @@
+// Don't forget to write which code each member worked on
+// Overall the code looks good and is nicely organize.  One suggestion I have is maybe 
+//providing some documentation describing the purpose of each function
 const { commentsCollection } = require("../db");
 
 async function dbCreateComment(comment) {

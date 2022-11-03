@@ -49,7 +49,7 @@ async function generateUniqueCommentId(objectId) {
   }
   return commentId;
 }
-
+// Nice use of crypto module.  Did not know of this module  
 function generateCommentId(objectId) {
   const sha = crypto.createHash("sha1");
   sha.update(objectId.toString() + new Date());

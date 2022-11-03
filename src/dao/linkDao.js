@@ -47,7 +47,7 @@ async function dbDeleteLink(linkId) {
     throw new Error("Delete Failed");
   }
 }
-
+// Nice use of .sort to get top hits in descending order
 async function dbGetTopHits() {
   const result = await linksCollection.find().sort({ hits: "desc" }).limit(10);
   if (!result) {

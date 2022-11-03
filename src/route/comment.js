@@ -1,3 +1,4 @@
+// Routes nicely organized in one folder
 const {
   createComment,
   getComment,
